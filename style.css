@@ -1,0 +1,104 @@
+:root {
+    color:black;
+    --left: 3%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'phonksans';
+    src: url(/assets/Slava\ Antipov\ -\ PhonkSans-Light.otf);
+}
+body,form,label,input,div.info-container {
+    display: flex;
+}
+
+h1,p,h2  {
+    margin-left: var(--left);
+}
+
+img,body {
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+label,input{
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    font-family: 'phonksans', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    color: #f1f1f1;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 125px;
+    color: white;
+    font-size: 50px;
+}
+
+form {
+    flex-direction: column;
+    background-color:  	#3b444b;
+    color: white;
+}
+
+div {
+    flex: 1;
+    /* flex: 1 sets flex-grow to 1 (whereas the default value is 0 ).
+    What this does: If all items have flex-grow set to 1, the remaining 
+    space in the info-container will be distributed equally to all children */
+}
+
+.heading > *{
+    padding: 4em 20% 0em 0em;
+}
+
+.test {
+    background-color: #353839;
+    box-shadow:6px 3px 6px black;
+}
+
+.info-container {
+    width: 100%;
+    padding-bottom: 1em;
+    gap: 80px;
+}
+
+.info-container > * {
+    max-width: max-content;
+    margin-left: var(--left);
+}
+
+.info > *{
+    margin:12px;
+}
+
+button.submit {
+    font-size: 20px;
+    padding: 14px;
+    width: 300px;
+    margin-left: var(--left);
+    margin-top: 1em;
+    box-shadow:6px 3px 6px black;
+    background-color: #950101;
+    color: rgb(255, 255, 255);
+    border: #950101;
+    border-radius: 5px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}

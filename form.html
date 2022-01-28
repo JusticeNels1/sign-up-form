@@ -4,80 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="/my-handling-form-page" method="post">
-       
-    </form>
+  <div class="container">
 
+    <img src="/assets/stocks.jpg">  
+    <div class="logo">Crypto Bros</div>
+  </div>
+  <form action="/my-handling-form-page" method="post">
+    
+    <div class="heading">
+      <h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Velit totam fuga eius culpa debitis consequuntur nostrum 
+        assumenda ipsum, error, atque rem repellat eos ut eligendi!
+      </h1>
+    </div>
+    
+    <div class="test">
+      <h2>Let's Do This</h2>
+      
+      <div class="info-container">
+        <div class="info">
+          <label for="first-name">First Name</label>
+          <input type="textarea" for="first-name">
+          <label for="last-name">Last Name</label>
+          <input type="textarea" for="last-name">
+          <label for="mail">E-Mail</label>
+          <input type="textarea" for="mail">
+        </div>
+        <div class="info">
+          <label for="phone">Phone Number</label>
+          <input type="textarea" for="phone">
+          <label for="password">Password</label>
+          <input type="textarea" for="password">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="textarea" for="confirm-password">
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="footer">
+      <button class="submit">Create Account</button>
+      <p>Already have an Account?<a href="#">Log In</a></p>
+    </div>
+    
+  </form>
+   
 </body>
-<style>
-    form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
-
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: .5em;
-}
-
-</style>
 </html>
